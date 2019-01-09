@@ -1,12 +1,37 @@
 h1{
     text-align: center;
 }
+
 .question{
  background-color: blue;
  text-align: center;
+ width: 200px;
+ height: 200px;
+ margin: 0 auto;
 }
 .answer{
  background-color:  yellow;
  text-align: center;
- 
+ width: 200px;
+ height: 200px;
+ margin: 0 auto;
+ display:inherit;
 }
+.q2{
+ background-color: aqua;
+ text-align: center;
+}
+.right,.wrong{
+ background-color: blueviolet;
+display: flex;
+align-items: flex-end;
+justify-content: end;
+margin: 0 auto;
+}
+/* .wrong{
+background-color: rebeccapurple;
+display: flex;
+align-items: flex-end;
+justify-content: end;
+margin:0 auto;
+} */
