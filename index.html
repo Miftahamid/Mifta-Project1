@@ -5,12 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <link href="/css/style.css" rel="stylesheet" />
-    <link
-      rel="stylesheet"
-      href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css"
-      integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS"
-      crossorigin="anonymous"
-    />
+
     <title>Flash Cards</title>
   </head>
   <body>
@@ -18,41 +13,50 @@
 
     <button class="start">Start the game</button>
 
-
-    <section class="question-wrapper">
-      <div class="container">
-        <div class="card">
-          <div class="question" id="q1">What nation boncned from Orgnaiztion to orgnization?</div>
-          <div class="question" id="q2">What continent have to fewest flowerig plant?</div>
-          <div class="question" id="q3">What element begin in the letter "k"?</div>
-          <div class="question" id="q4">How many days does a cat usally stay in the heat?</div>
-          <div class="question" id="q5">How many U.S states border the Gulf of Mexico?</div>
-        </div>
+    <!-- <section class="question-wrapper"> -->
+    <!-- <div class="container"> -->
+    <div class="card">
+      <div class="question" id="q1">
+        <p>
+        What nation boncned from Orgnaiztion to orgnization?
+        </p>
       </div>
-    </section>
+      <div class="question" id="q2">
+        What continent have to fewest flowerig plant?
+      </div>
+      <div class="question" id="q3">What element begin in the letter "k"?</div>
+      <div class="question" id="q4">
+     <span></span> many days does a cat usally stay in the heat?
+      </div>
+      <div class="question" id="q5">
+        How many U.S states border the Gulf of Mexico?
+      </div>
+    </div>
+    <!-- </div> -->
+    <!-- </section> -->
 
+    <button class="show">Show the Answer</button>
 
-
-    <section class="answer-wrapper">
-      <div class="container">
+    <!-- <section class="answer-wrapper"> -->
+      <!-- <div class="container"> -->
         <div class="card">
-          <div class="question" id="a1"> Cuba</div>
-          <div class="question" id="a2"> Antartica </div>
-          <div class="question" id="a3"> Kypton</div>
+          <div class="question" id="a1">Cuba</div>
+          <div class="question" id="a2">Antartica</div>
+          <div class="question" id="a3">Kypton</div>
           <div class="question" id="a4">five</div>
           <div class="question" id="a5">five</div>
         </div>
-      </div>
-    </section>
-            
-            <button class ="next">Next</button>
-            <button class="show">Show the Answer</button>
-            <div class="score">
-                <p>Did you get the question right?</p>
-             <button class="right">Yes I did.</button>
-             <button class="wrong">No I didnot.</button>
-            </div>
-    
+      <!-- </div>
+    </section> -->
+
+    <!-- <button class="next">Next</button> -->
+
+    <!-- <div class="score">
+      <p>Did you get the question right?</p>
+      <button class="right">Yes I did.</button>
+      <button class="wrong">No I didnot.</button>
+    </div> -->
+
     <script src="/js/script.js"></script>
   </body>
 </html>
