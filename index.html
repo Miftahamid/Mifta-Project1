@@ -15,41 +15,30 @@
   </head>
   <body>
     <h1>Flash Cards</h1>
-    <section>
-    <section class="question">
-            <div class="container">
-                    <div class="card">
-                            <div class="q1">What nation boncned from Orgnaiztion to orgnization?</div>
-                            <div class="q2">What continent have to fewest flowerig plant?</div>
-                            <div class="q3">Waht element begin in the letter "k"?</div>
-                            <div class="q4">How many days does a cat usally stay in the heat?</div>
-                            <div class="q5">How many U.S states border the Gulf of Mexico?</div>
-                    </div>
-            </div>
-    </section>
 
-    <section class="scores">
+    <button class="start">Start the game</button>
+
+
+    <section class="question-wrapper">
+      <div class="container">
+        <div class="card">
+          <div class="question" id="q1">What nation boncned from Orgnaiztion to orgnization?</div>
+          <div class="question" id="q2">What continent have to fewest flowerig plant?</div>
+          <div class="question" id="q3">What element begin in the letter "k"?</div>
+          <div class="question" id="q4">How many days does a cat usally stay in the heat?</div>
+          <div class="question" id="q5">How many U.S states border the Gulf of Mexico?</div>
+        </div>
+      </div>
+    </section>
+            
+            <button class ="next">Next</button>
+            <button class="show">Show the Answer</button>
             <div class="score">
-             <p>Did you get the question right?</p>
+                <p>Did you get the question right?</p>
              <button class="right">Yes I did.</button>
              <button class="wrong">No I didnot.</button>
             </div>
-    </section>
-
-    <section class="answer">
-            <div class="containers">
-                    <div class="card">
-                            <div class="a1">Cuba</div>
-                            <div class="a2">Antartica</div>
-                            <div class="a3">Kypton</div>
-                            <div class="a4">five</div>
-                            <div class="a5">five</div>
-                    </div>
-            </div>
-    </section>
-
-</section>
-    <button>Next</button>
+    
     <script src="/js/script.js"></script>
   </body>
 </html>
