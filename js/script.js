@@ -1,6 +1,4 @@
 //startting point of the index  and
-let questionCount = 0;
-let answerCount = 0;
 // Id's are a globle veriable so you don't have to declare it
 // you can cheack window.#q1
 
@@ -31,11 +29,20 @@ let answerCount = 0;
 // //Answers
 // const answer = ['Cuba', 'Antartica','Kypton','five','five']
 
+let questionCount = 0;
+let answerCount = 0;
+//let checkQuestion = answerCount + questionCount;
+
 // Add the index of the
 function displayQuestions() {
-  console.log("I was clicked");
-  questionCount++;//take ll\||||\\||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||\\\\\\\\\\\\\\\\/off and put it in a function llllll
-  // show question
+  console.log("I was clicked question"); 
+  questionCount++
+  // if(answerCount === questionCount){
+  //   //answerCount++
+  // }else{
+  //   alert("You have to reset the page?")
+  // }
+   // show question
   if (questionCount == 1) {
     q1.style.display = "block";
     //q1.style.display.backgroundColor= 'white'
@@ -56,62 +63,50 @@ function displayQuestions() {
   }
 }
 
-function displayAnswers() {
-  //console.log("I was clicked");
-  answerCount++;
-  // show answer
-  if (answerCount == 1) {
-    a1.style.display = "block";
-
-  } else if (answerCount === 2) { // the 2 
-    a2.style.display = "block";
-    a1.style.display = "none";
-    var checkAnwer = prompt("Did you get it right? yes/no");
-      if (checkAnwer == "yes") {
-        alert("You can go to the next question?");
-      } else {
-      alert("You need more practice.");
-      }
-
-     } else if (answerCount === 3) { // the 3
-    a4.style.display = "block";
-    a3.style.display = "none";
-    var checkAnwer = prompt("Did you get it right? yes/no");
-      if (checkAnwer == "yes") {
-        alert("You can go to the nest question?");
-      } else {
-         alert("You need more practice.");
-      }
-    } else if (answerCount === 4) { // the 4 
-    a4.style.display = "block";
-    a3.style.display = "none";
-    var checkAnwer = prompt("Did you get it right? yes/no");
-      if (checkAnwer == "yes") {
-        alert("You can go to the nest question?");
-      } else {
-          alert("You need more practice.");
-      }
-      } else if (answerCount === 5) { // the 5
-    a5.style.display = "block";
-    a4.style.display = "none";
-    var checkAnwer = prompt("Did you get it right? yes/no");
-     if (checkAnwer == "yes") {
-         alert("You can go to the nest question?");
-      } else {
-        alert("You need more practice.");
-      }
+  function displayAnswers() {
+    console.log("I was clicked answer");
+    answerCount++;
+    // if(questionCount ==  answerCount){
+    //   answerCount++;
+    // }else{
+    //   alert("You have to reset the page?")
+    // }
+    
+    // show answer
+    if (answerCount == 1) { // the 1
+      a1.style.display = "block";
+    } else if (answerCount === 2) { // the 2 
+      a2.style.display = "block";
+      a1.style.display = "none";
+      } else if (answerCount === 3) { // the 3
+      a3.style.display = "block";
+      a2.style.display = "none";
+      } else if (answerCount === 4) { // the 4 
+      a4.style.display = "block";
+      a3.style.display = "none";
+        } else if (answerCount === 5) { // the 5
+      a5.style.display = "block";
+      a4.style.display = "none";
+    }
   }
-}
 
-funtion checkQuestion(){
- 
-}
+//  function checkQuestion(){
+//   console.log("I was clicked from checkQuestion")
+//   console.log(questionCount)
+//   console.log(answerCount)
+//   answerCount++;
+//   if(questionCount === answerCount){
+//     questionCount++;
+//   }else{
+//     alert("You have to reset the page?")
+//   }
+// }
 //console.log(questionCount)
 // if the button is click then add one to questionCount
 
-document.querySelector(".start").addEventListener("click", displayQuestions);
-document.querySelector(".show").addEventListener("click", displayAnswers);
-
+document.querySelector(".start").addEventListener("keypress", displayQuestions);
+document.querySelector(".show").addEventListener("keypress", displayAnswers);
+// document.querySelector(".next").addEventListener("click", checkQuestion);
 // when the game starts
 //document.getElementsByClassName(".start");
 
@@ -123,4 +118,3 @@ document.querySelector(".show").addEventListener("click", displayAnswers);
 //   x.setAttribute("value", "Click me");
 //   document.body.appendChild(x);
 // }
-
