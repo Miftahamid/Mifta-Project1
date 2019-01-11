@@ -68,7 +68,7 @@ document.querySelector('.next').addEventListener("click", displayQuestions);
     if(display == 'yes'){
     alert('Hey now you know something useful.')
     }else{
-      alert('You need little bit more practice. And use some google it is healthly and good for the enviroment ')
+      alert('You need little bit more practice.')
     }
   }
  
