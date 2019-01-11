@@ -32,7 +32,7 @@
 let questionCount = 0;
 let answerCount = 0;
 //let checkQuestion = answerCount + questionCount;
-
+document.querySelector(".start").addEventListener("keypress", displayQuestions);
 // Add the index of the
 function displayQuestions() {
   console.log("I was clicked question"); 
@@ -61,6 +61,8 @@ function displayQuestions() {
     q5.style.display = "block";
     q4.style.display = "none";
   }
+  document.querySelector(".start").removeEventListener("keypress",displayQuestions)
+  document.querySelector(".show").addEventListener("keypress", displayAnswers);
 }
 
   function displayAnswers() {
@@ -88,6 +90,8 @@ function displayQuestions() {
       a5.style.display = "block";
       a4.style.display = "none";
     }
+    document.querySelector(".show").removeEventListener("keypress",displayAnswers)
+    document.querySelector(".start").addEventListener("keypress", displayQuestions);
   }
 
 //  function checkQuestion(){
@@ -104,8 +108,8 @@ function displayQuestions() {
 //console.log(questionCount)
 // if the button is click then add one to questionCount
 
-document.querySelector(".start").addEventListener("keypress", displayQuestions);
-document.querySelector(".show").addEventListener("keypress", displayAnswers);
+//document.querySelector(".start").addEventListener("keypress", displayQuestions);
+// document.querySelector(".show").addEventListener("keypress", displayAnswers);
 // document.querySelector(".next").addEventListener("click", checkQuestion);
 // when the game starts
 //document.getElementsByClassName(".start");

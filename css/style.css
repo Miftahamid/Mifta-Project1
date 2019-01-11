@@ -1,12 +1,12 @@
  /* got thes animation from a youtube animation  https://www.youtube.com/watch?v=0opookDE4bk */
 body {
-  background: linear-gradient(132deg, #ec5218, #1665c1);
+  background: linear-gradient(132deg, #e61212, #0b6cdb);
   background-size: 400% 400%;
   animation: BackgroundGradient 30s ease infinite;
 }
 /* animation name */
 @keyframes BackgroundGradient { 
-  /* 0% (0 second)50%(15 second) 100% (30 sec) */
+  /* 0% (0 second) 50%(15 second) 100% (30 sec) */
   0% {
     background-position: 0% 50%;
   }
@@ -22,14 +22,7 @@ h1 {
   text-align: center;
   font-size: 80px;
 }
-.next {
-  display: flex;
-  justify-content: end;
-}
- .time{
-   display: flex;
-
- }
+ 
 .card {
   display: flex;
   align-content: center;
@@ -111,15 +104,15 @@ p {
   text-justify: auto;
   text-transform: uppercase;
   background-color: orange;
+  background: linear-gradient(132deg, #dbd7db, #c1165d);
+  background-size: 400% 400%;
+  animation: BackgroundGradient 10s ease infinite;
 }
 .show {
   text-align: center;
   text-transform: uppercase;
   text-emphasis: weight;
-  background-color: blue;
-}
-.next{
- display: flex;
- justify-content: end;
- 
+  background: linear-gradient(132deg, #d8c8d7, #c1165d);
+  background-size: 400% 400%;
+  animation: BackgroundGradient 10s ease infinite;
 }
