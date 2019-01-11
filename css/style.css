@@ -1,11 +1,12 @@
- /* got thes animation from a youtube animation  https://www.youtube.com/watch?v=0opookDE4bk */
+/* got thes animation from a youtube animation  https://www.youtube.com/watch?v=0opookDE4bk */
 body {
-  background: linear-gradient(132deg, #e61212, #0b6cdb);
+  background: linear-gradient(132deg, #df9b9b, #4c6e95);
   background-size: 400% 400%;
+  /* this control the animation 30 seconds infinite */
   animation: BackgroundGradient 30s ease infinite;
 }
 /* animation name */
-@keyframes BackgroundGradient { 
+@keyframes BackgroundGradient {
   /* 0% (0 second) 50%(15 second) 100% (30 sec) */
   0% {
     background-position: 0% 50%;
@@ -21,8 +22,9 @@ body {
 h1 {
   text-align: center;
   font-size: 80px;
+  color: white;
 }
- 
+
 .card {
   display: flex;
   align-content: center;
@@ -34,71 +36,38 @@ h1 {
   font-size: 30px;
   line-height: 100px;
 }
-
-#q1 {
-  display: flex;
-  justify-content: center;
-  font-size: 30px;
-  line-height: 100px;
-}
 p {
   display: flex;
   text-align: center;
   align-content: center;
   flex-direction: column;
   position: relative;
+  color: white;
 }
 
-#q1 {
-  display: none;
-}
-#q2 {
-  display: none;
-  height: 200px;
-  text-align: center;
-}
-#q3 {
-  display: none;
-  height: 200px;
-  text-align: center;
-}
-#q4 {
+/* #q1 {
+  display: flex;
+  justify-content: center;
+  font-size: 30px;
+  line-height: 100px;
+  color: white;
+} */
+
+#q1,#q2,#q3,#q4,#q5 {
   display: none;
   height: 200px;
   text-align: center;
-}
-#q5 {
-  display: none;
-  height: 200px;
-  text-align: center;
+  color: white;
+  font-weight: 400;
 }
 
-#a1 {
+#a1,#a2,#a3,#a4,#a5 {
   display: none;
   height: 200px;
   text-align: center;
+  color: white;
+  font-weight: 400;
 }
-#a2 {
-  display: none;
-  height: 200px;
-  text-align: center;
-}
-#a3 {
-  display: none;
-  height: 200px;
-  text-align: center;
-}
-#a4 {
-  display: none;
-  height: 200px;
-  text-align: center;
-}
-#a5 {
-  display: none;
-  height: 200px;
-  text-align: center;
-}
-
 .start {
   text-align: center;
   text-justify: auto;
